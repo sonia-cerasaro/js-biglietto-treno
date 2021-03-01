@@ -1,3 +1,46 @@
-body {
-  background-color: lightblue;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Satisfy', cursive;
+  color: #7c6726;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/polar.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+    padding-top: 200px;
+}
+
+
+img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+
+div.golden_ticket_container{
+  width: 50%;
+  margin: auto;
+  border: white dotted 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.h1_container {
+  width: 80%;
+  position: absolute;
+  top: 4%;
+  right: -9%;
+}
+
+h1 {
+  font-size: 30px;
 }
