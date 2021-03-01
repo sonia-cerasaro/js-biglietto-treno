@@ -1,9 +1,7 @@
 
 var prezzo_al_km = 0.21;
 
-var sconto_giovani = 0;
-
-var sconto_senior = 0;
+var prezzo_scontato = 0;
 
 
 var km_desiderati = prompt("Quanti chilometri vuoi percorrere?");
@@ -19,14 +17,22 @@ console.log(km_desiderati + " " + "chilometri desiderati," + " " + eta_utente + 
 
 
 if (eta_utente < 18){
-  sconto_giovani = (prezzo_pieno_biglietto * 20) / 100
+  prezzo_scontato = Math.floor(prezzo_pieno_biglietto - ((prezzo_pieno_biglietto * 20) / 100));
+  alert("Sconto giovani: " + prezzo_scontato + "$");
+  console.log("Sconto giovani: " + prezzo_scontato + "$");
 }
 else if (eta_utente > 65){
-  sconto_senior = (prezzo_pieno_biglietto * 40) / 100
+  prezzo_scontato = Math.floor(prezzo_pieno_biglietto - ((prezzo_pieno_biglietto * 40) / 100));
+  alert("Sconto senior: " + prezzo_scontato + "$");
+  console.log("Sconto senior: " + prezzo_scontato + "$");
 }
-// else {
-  console.log(sconto_giovani);
-// }
+else {
+  alert("Prezzo pieno: " + prezzo_pieno_biglietto + "$");
+  console.log("Prezzo pieno: " + prezzo_pieno_biglietto + "$");
+}
+
+
+
 
 
 // if eta_utente < 18 consolo.log sconto_giovani
